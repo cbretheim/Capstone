@@ -14,13 +14,14 @@ body {
   margin: 0;
   padding: 0;
   background: #FAF9F6;
-
+  color: #5A5A5A;
 }
 
 
 /***NAVBAR****/
 
 .main-nav {
+  z-index: 2;
 position: fixed;
 height: 3rem;
 width: 100%;
@@ -34,7 +35,7 @@ background: #FAF9F6;
   color: RGB(0,0,0,90);
 }
 
-.main-nav h1 {
+.main-nav h2 {
   font-size: 15px;
   position: absolute;
   left: 0;
@@ -67,4 +68,18 @@ background: #FAF9F6;
 
 img {
   width: 100%;
+}
+
+.main {
+  margin-top: 0;
+  padding: 0;
+  z-index: -1;
+  /* margin: 2rem 2rem; */
+}
+
+h1 {
+  font-size: 4.5em;
+  line-height: 1.1;
+  font-style: italic;
+  color: #1066b1;
 }
