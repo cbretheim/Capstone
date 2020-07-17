@@ -13,8 +13,8 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
-  background: #FAF9F6;
-  color: #5A5A5A;
+  background: #FAFAFA;
+  color: #202020;
 }
 
 
@@ -25,7 +25,7 @@ body {
 position: fixed;
 height: 3rem;
 width: 100%;
-background: #FAF9F6;
+background: #FAFAFA;
 
 }
 
@@ -79,7 +79,36 @@ img {
 
 h1 {
   font-size: 4.5em;
-  line-height: 1.1;
+  line-height: 1em;
   font-style: italic;
   color: #1066b1;
+}
+
+h2 {
+  font-size: 2.7em;
+  line-height: 1.1em;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+/**** sections ****/
+.container {
+  display: flex;
+  margin: 2%;
+}
+
+.two-thirds {
+  width: 67%;
+  padding: 0 5%;
+  /* background-color: red; */
+  flex-grow: 0;
+}
+
+.one-third {
+  width: 33%;
+  /* background-color: blue; */
+  flex-grow: 0;
 }
