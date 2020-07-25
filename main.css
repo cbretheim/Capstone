@@ -13,26 +13,33 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
-  background: #FAFAFA;
+  /* background: #FAFAFA; */
   color: #202020;
 }
 
+/**** LInks styling ****/
+a {
+  font-weight: bold;
+  color: #ad9948;
+  text-decoration: none;
+  border-bottom: 1px solid #ad9948;
+}
 
 /***NAVBAR****/
 
 .main-nav {
   z-index: 2;
-position: fixed;
-height: 3rem;
-width: 100%;
-background: #FAFAFA;
-
+  position: fixed;
+  height: 3rem;
+  width: 100%;
+  background: #FFFFFF;
 }
 
 .main-nav a {
   border: none;
   text-decoration: none;
   color: RGB(0,0,0,90);
+  font-weight: normal;
 }
 
 .main-nav h2 {
@@ -56,13 +63,21 @@ background: #FAFAFA;
 
 .main-nav li a {
   display: block;
-  margin: 1em 4em 0.5em 0;
+  margin: 1em 4em 0.5em 2em;
 }
 
 .main-nav a:hover {
   color: #059949;
   font-weight: bold;
 }
+/* ATTEMPT TO GET NAV TO CHANGE COLOR ON SCROLL
+.main-nav.scrolled {
+  background-color: red !important;
+  transition: background-color 200ms linear;
+} */
+/*
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;} */
 
 /***END OF NAVBAR****/
 
@@ -81,7 +96,7 @@ h1 {
   font-size: 4.5em;
   line-height: 1em;
   font-style: italic;
-  color: #1066b1;
+  /* color: #1066b1; */
 }
 
 h2 {
@@ -89,15 +104,19 @@ h2 {
   line-height: 1.1em;
 }
 
+h3 {}
+
 p {
   font-size: 18px;
   line-height: 1.5em;
 }
 
+
+
 /**** sections ****/
 .container {
   display: flex;
-  margin: 2%;
+  margin: 0 62px;
 }
 
 .two-thirds {
@@ -109,6 +128,23 @@ p {
 
 .one-third {
   width: 33%;
+  padding-left: 8.3%;
   /* background-color: blue; */
   flex-grow: 0;
+}
+
+.home .one-third {
+  padding-left: 0;
+}
+
+.home .two-thirds {
+  padding-top: 50px;
+}
+
+.centered-half {
+  margin: 0 20%;
+}
+
+.top {
+  margin-top: 100px;
 }
