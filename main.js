@@ -63,6 +63,9 @@ function showSlides(n) {
 //   });
 // });
 
+
+/*** SCROLL ANIMATION ***/
+
 $(function(){  // $(document).ready shorthand
   $('.monster').fadeIn('slow');
 });

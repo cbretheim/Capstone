@@ -32,10 +32,10 @@ a:hover {
   border-bottom: 3px solid #ad9948;
 }
 
-a:visited {
+/* a:visited {
   color: #C2C2C2;
   border-bottom: 1px solid #C2C2C2;
-}
+} */
 
 .slideshow-container a {
   border-bottom: none;
@@ -138,16 +138,37 @@ h1 {
   /* color: #1066b1; */
 }
 
+#advocacy-heading {
+  color: #059949;
+}
+
+#advocacy-heading .one-third {
+  margin-top: 4.4em;
+}
+
+
+
 h2 {
   font-size: 2.7em;
   line-height: 1.1em;
 }
 
-h3 {}
+.advocacy-subhead {
+  margin-top: 0;
+}
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5em;
+}
+
+/* .spaced-paragraph {
+  margin-bottom: 40px;
+  margin-top: -10px;
+} */
+
+h4 {
+  margin-bottom: -15px;
 }
 
 .caption {
