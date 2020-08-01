@@ -17,9 +17,24 @@
   </head>
 
   <body>
+    <!-- Mobile navbar -->
+    <div class="hidden-nav" id="myhiddennav">
+      <!-- Button to close the mobile navigation -->
+        <a href="javascript:void(0)" class="close-icon" onclick="closeNav()">&times;</a>
+
+      <!-- Mobile nav content -->
+      <div class="hidden-nav-content">
+        <a href="index.html">Home</a>
+        <a href="about.html" id="about">About</a>
+        <a href="process.html" id="process">Process</a>
+        <a href="advocate.html" id="advocate">Advocate</a>
+      </div>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="main-nav" id="main-nav">
       <h2><a href="index.html">Power to the Pedestrian</a></h2>
+      <span onclick="openNav()" class="bars">&#9776;</span>
       <ul>
         <li><a href="about.html" id="currentpage">About</a></li>
         <li><a href="process.html">Process</a></li>
@@ -89,17 +104,20 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="main-nav footer scrolldiv">
-      <h2 id="footername">Catherine Bretheim</h2>
-      <ul>
-        <li>Minneapolis College of Art and Design</li>
-        <li>Master of Arts in Graphic and Web Design</li>
-        <li>August 2020</li>
-
-      </ul>
+    <footer class="footer scrolldiv">
+      <div class="one-half">
+        <h2 id="footername">Catherine Bretheim</h2>
+      </div>
+      <div class="two-thirds">
+        <ul>
+          <li>Minneapolis College of Art and Design</li>
+          <li>Master of Arts in Graphic and Web Design</li>
+          <li>August 2020</li>
+        </ul>
+      </div>
     </footer>
-
     <script src="jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
     <script src="scroll.js"></script>
   </body>
 </html>

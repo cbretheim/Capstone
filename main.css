@@ -32,18 +32,57 @@ a:hover {
   border-bottom: 3px solid #ad9948;
 }
 
-/* a:visited {
+a:visited {
   color: #C2C2C2;
   border-bottom: 1px solid #C2C2C2;
-} */
+}
 
 .slideshow-container a {
   border-bottom: none;
 }
 
+/***** HIDDEN/mobile NAV*****/
+.hidden-nav {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #FFF;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.hidden-nav-content {
+  position: relative
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hidden-nav-content a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #202020;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.hidden-nav .close-icon {
+  font-style: normal;
+  font-size: 3rem;
+  border: 0;
+  position: absolute;
+  top: 0rem;
+  right: 0.5em;
+  color: #1066b1;
+  cursor: pointer;
+}
+
+
 /***NAVBAR****/
-
-
 
 .main-nav {
   z-index: 2;
@@ -71,7 +110,7 @@ a:hover {
   margin-left: 1em;
 }
 
-.main-nav ul {
+.main-nav ul, .footer ul {
   list-style: none;
   position: absolute;
   right: 0;
@@ -79,7 +118,7 @@ a:hover {
   padding: 0;
 }
 
-.main-nav li {
+.main-nav li, .footer li {
   float: left;
 }
 
@@ -104,6 +143,8 @@ a:hover {
   position: relative;
   font-size: 0.7em;
   margin-top: 100px;
+  display: flex;
+  margin-bottom: 15px;
 }
 
 .footer li {
@@ -117,8 +158,12 @@ img {
 
 #footername {
   font-size: 1.2em;
+  margin-left: 20px;
 }
 
+.one-fourth p {
+  font-size: 10px;
+}
 /****end of footer FORMATTING****/
 
 
@@ -216,6 +261,24 @@ h4 {
 .one-third {
   width: 33%;
   /* background-color: blue; */
+  flex-grow: 0;
+}
+
+.one-fourth {
+  float: right;
+  padding-left: 10%;
+  text-align: right;
+}
+
+#footer-right {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  padding-right: 0;
+}
+
+.one-half {
+  width: 50%;
   flex-grow: 0;
 }
 
@@ -342,3 +405,71 @@ left: 53%;
   from {opacity: .7}
   to {opacity: 1}
 }
+
+
+/**** MOBILE SIZING *****/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /***** mobile navigation formatting*****/
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    position: absolute;
+    right: 0.6em;
+    top: 0.0em;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #1066b1;
+  }
+
+  .hidden-nav {
+    display: none;
+  }
+
+.container, .container-full, .footer
+  {
+    flex-wrap: wrap;
+    margin:10px;
+  }
+
+.one-third, .two-thirds, .one-half {
+      flex: 100%;
+  }
+
+  .one-quarter {
+    float: none;
+  }
+
+  .left-padding {
+    margin-left: 5%;
+    padding-left: 0;
+  }
+
+  .two-thirds {
+    margin-top: 0;
+  }
+
+  .footer li {
+    display: relative;
+    padding-right: 200px;
+}
+}
+
+  /**** DESKTOP SIZING *****/
+  @media only screen and (min-width: 768px) {
+    /* #bars {
+      display: none!important;
+    } */
+
+    .bars {
+      display: none!important;
+    }
+
+    .hidden-nav {
+      display: none;
+    }
+  }

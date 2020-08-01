@@ -93,3 +93,21 @@ $(document).ready(function() {
     });
 
 });
+
+// Open all links in another tab
+// var links = document.links;
+// for (var i = 0; i < links.length; i++) {
+//      links[i].target = "_blank";
+// }
+
+
+//Open/hide mobile navbar
+/* Open */
+function openNav() {
+  document.getElementById("myhiddennav").style.display = "block";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myhiddennav").style.display = "none";
+}

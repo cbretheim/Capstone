@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power to the Pedestrian</title>
     <link type="text/css" rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <style>
@@ -17,9 +16,24 @@
   </head>
 
   <body>
+    <!-- Mobile navbar -->
+    <div class="hidden-nav" id="myhiddennav">
+      <!-- Button to close the mobile navigation -->
+        <a href="javascript:void(0)" class="close-icon" onclick="closeNav()">&times;</a>
+
+      <!-- Mobile nav content -->
+      <div class="hidden-nav-content">
+        <a href="index.html">Home</a>
+        <a href="about.html" id="about">About</a>
+        <a href="process.html" id="process">Process</a>
+        <a href="advocate.html" id="advocate">Advocate</a>
+      </div>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="main-nav" id="main-nav">
       <h2><a href="index.html">Power to the Pedestrian</a></h2>
+      <span onclick="openNav()" class="bars">&#9776;</span>
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="process.html">Process</a></li>
@@ -28,7 +42,7 @@
     </nav>
     <!-- END OF NAVBAR -->
     <div class="container" id="advocacy-heading">
-      <div class="one-third top">
+      <div class="one-third top left-padding">
         <h1>Advocacy Toolkit</h1>
       </div>
       <div class="two-thirds top">
@@ -44,26 +58,26 @@
       <div class="two-thirds top">
         <h3>City of Minneapolis</h3>
         <p>
-          Blurb goes here
+          The political leaders of Minneapolis have power over city-owned streets and can encourage Hennepin county to take action on streets under their jurisdiction in the city.
         </p>
         <p>
-          <a href="">Contact your City Council member</a>
+          <a href="https://www.minneapolismn.gov/government/city-council/find-my-ward/" target="_blank">Contact your City Council member</a>
         </p>
         <p>
-          <a href="">Contact the mayor of Minneapolis</a>
+          <a href="http://www2.minneapolismn.gov/mayor/contact/" target="_blank">Contact the mayor of Minneapolis</a>
         </p>
         <br />
 
         <h3>Hennepin County</h3>
         <p>
-          Blurb goes here
+          75% of car-pedestrian crashes resulting in severe injury or death occur on just 5% of Minneapolis roads (by mileage) – these streets comprise the high injury network. Streets within the network include stretches of Lake Street, Franklin Avenue, Lyndale Avenue, Hennepin Avenue, and Broadway Street NE, all of which are under the jurisdiction of Hennepin County.
         </p>
         <p>
-          <a href="">Contact your Hennepin County commissioner</a>
+          <a href="https://www.hennepin.us/your-government/leadership/find-commissioner" target="_blank">Contact your Hennepin County commissioner</a>
         </p>
-        <p>
+        <!-- <p>
           <a href="">Contact ____</a>
-        </p>
+        </p> -->
       </div>
     </div>
     <div class="container scrolldiv">
@@ -72,10 +86,19 @@
       </div>
       <div class="two-thirds top">
         <p>
-          Blurb goes here
+          Learn more about city, county, and state-level policies and plans that impact active transportation in Minneapolis.
         </p>
         <p>
-          <a href="">Link here</a>
+          <a href="http://go.minneapolismn.gov/" target="_blank">City of Minneapolis Transportation Action Plan</a>
+        </p>
+        <p>
+          <a href="https://www.hennepin.us/residents#transportation" target="_blank">Hennepin County Transportation</a>
+        </p>
+        <p>
+          <a href="https://www.hennepin.us/your-government/budget-finance/budgets" target="_blank">Hennepin County Budgets</a>
+        </p>
+        <p>
+          <a href="http://www.dot.state.mn.us/peds/" target="_blank">Minnesota Department of Transportation: Pedestrians</a>
         </p>
       </div>
     </div>
@@ -86,10 +109,19 @@
       </div>
       <div class="two-thirds top">
         <p>
-          Blurb goes here
+          These organizations are leading the way in non-motorized transportation advocacy work
         </p>
         <p>
-          <a href="">Link here</a>
+          <a href="https://www.ourstreetsmpls.org/" target="_blank">Our Streets Minneapolis</a>
+        </p>
+        <p>
+          <a href="https://www.movemn.org/" target="_blank">Move Minnesota</a>
+        </p>
+        <p>
+          <a href="https://streets.mn/" target="_blank">Streets.mn</a>
+        </p>
+        <p>
+          <a href="https://www.transalt.org/" target="_blank">Transportation Alternatives</a>
         </p>
       </div>
     </div>
@@ -100,10 +132,27 @@
       </div>
       <div class="two-thirds top">
         <p>
-          Blurb goes here
+          Feeling inspired to read more? Here's a short list of books to check out.
         </p>
         <p>
-          <a href="">Link here</a>
+          <a href="http://www.jsadikkhan.com/streetfight-the-book.html" target="_blank"><em>Street Fight: Handbook for an Urban Revolution</em></a>
+          <br />Janette Sadik-Khan
+        </p>
+        <p>
+          <a href="https://nacto.org/publication/urban-street-design-guide/" target="_blank"><em>Urban Street Design Guide</em></a>
+          <br />National Association of City Transportation Officials (NACTO)
+        </p>
+        <p>
+          <a href="https://nacto.org/global-street-design-guide-gsdg/" target="_blank"><em>Global Street Design Guide</em></a>
+          <br />Global Designing Cities Initiative and NACTO
+        </p>
+        <p>
+          <a href="https://www.penguinrandomhouse.com/books/86058/the-death-and-life-of-great-american-cities-by-jane-jacobs/" target="_blank"><em>The Death and Life of Great American Cities</em></a>
+          <br />Jane Jacobs
+        </p>
+        <p>
+          <a href="https://gehlpeople.com/shopfront/life-between-buildings-1971-orig/" target="_blank"><em>Life Between Buildings</em></a>
+          <br />Jan Gehl
         </p>
       </div>
     </div>
@@ -122,17 +171,20 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="main-nav footer scrolldiv">
-      <h2 id="footername">Catherine Bretheim</h2>
-      <ul>
-        <li>Minneapolis College of Art and Design</li>
-        <li>Master of Arts in Graphic and Web Design</li>
-        <li>August 2020</li>
-
-      </ul>
+    <footer class="footer scrolldiv">
+      <div class="one-half">
+        <h2 id="footername">Catherine Bretheim</h2>
+      </div>
+      <div class="two-thirds">
+        <ul>
+          <li>Minneapolis College of Art and Design</li>
+          <li>Master of Arts in Graphic and Web Design</li>
+          <li>August 2020</li>
+        </ul>
+      </div>
     </footer>
-
     <script src="jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
     <script src="scroll.js"></script>
   </body>
 </html>
